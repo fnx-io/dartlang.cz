@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Programovací jazyk Dart</title>
+    <meta name="description" content="Neoficiální český rozcestník pro zájemce o programovací jazyk Dart.">
+    <link rel="stylesheet" href="packages/fnx_ui/css/fnx_ui.css">
+    <script defer src="packages/browser/dart.js"></script>
+    <script defer src="main.dart" type="application/dart"></script>
+    <style>
+        .content {
+            max-width: 80em;
+            min-height: 100%;
+            margin:0 auto;
+            padding: 5em;
+        }
+        @media only screen and (max-width: 70em) {
+            .content {
+                padding: 2em;
+            }
+        }
+        @media only screen and (max-width: 40em) {
+            .content {
+                padding: 1em;
+            }
+        }
+        .logo {
+            width: 10rem;
+        }
+        .logo__wrapper {
+            margin-bottom: 3rem;
+        }
+        p {
+            line-height: 1.5;
+        }
+        body {
+            height: auto;
+        }
+        .sources li {
+            line-height: 1.8;
+        }
+        .sources li a {
+            text-decoration: underline;
+        }
+        .btn {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        footer {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body class="bg--light-blue--l4">
+
+<div class="content bg--white">
+    <h1 class="logo__wrapper"><img src="img/logo.svg" class="logo" alt="Dart"></h1>
+
+    <div class="row--gutter margin--big--bottom">
+        <div class="s12 m12 l8 hide-on-s">
+            <iframe src='https://dartpad.dartlang.org/embed-dart.html?id=a8ccacb32fac8be6004e32fbf9488852' style='height:300px;width:100%;' frameborder='0'></iframe>
+        </div>
+        <div class="fs-l s12 m12 l4"><p><strong>Dart</strong> je programovací jazyk pro tvorbu aplikací. Lze ho použít v každém moderním prohlížeči,
+            na serveru, v příkazové řádce nebo na mobilních telefonech.</p>
+            <p class="bold fs-xl hide-on-m hide-on-s"><i class="mi">arrow_back</i> Vyzkoušejte si ho.</p>
+        </div>
+    </div>
+
+    <div class="row--gutter margin--big--vertical">
+        <p class="s12 m6">
+            Dartu se nejčastěji používá na webu. Dart sice nelze v prohlížeči přímo spustit, ale pomocí <span class="monospace">dart2js</span>
+            se kompiluje do JavaScriptu.
+            Není to pouhá <a href="https://cs.wikipedia.org/wiki/Transpiler">transpilace</a>. Dart využívá JavaScript jako bytekód pro
+            běh v&nbsp;prohlížeči a přináší vývojářům vlastnosti, které JavaScript nemá. Jako je např.&nbsp;<a
+                href="https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping_vs._dynamic_scoping">lexikální obor platnosti proměnných</a>
+            nebo objektově orientované programování pomocí tříd.
+
+        </p>
+        <div class="s12 m6">
+            <p>Protože se jedná o poměrně mladý jazyk, měl šanci poučit se z mnoha předchozích chyb a naopak se inspirovat postupy, které
+                se osvědčily. Za jednu z jeho hlavních výhod lze proto považovat propracovanou
+                <a href="https://www.dartlang.org/guides/libraries/library-tour">standardní knihovnu</a>,
+                která zahrnuje práci s řetězci (čísly, kolekcemi, ...)
+                <a href="https://www.dartlang.org/guides/libraries/library-tour#dartasync---asynchronous-programming">Futures</a>
+                pro asynchronní volání,
+                <a href="https://www.dartlang.org/guides/libraries/library-tour#darthtml---browser-based-apps">nástroje pro manipulaci s DOM</a>, atd.
+            </p>
+            <p>Nechybí ani podpora <a href="https://www.dartlang.org/guides/language/language-tour#functions">funkcionálního programování</a>.</p>
+        </div>
+    </div>
+
+    <div class="row--gutter">
+
+        <div class="card padding s12 m6">
+            <h3>Jak začít</h3>
+            <p>Pro vývoj v Dartu budete potřebovat <a href="https://www.dartlang.org/install">Dart SDK</a> a textový editor.
+                Je pravděpodobné, že pro vaše oblíbené IDE existuje <a href="https://www.dartlang.org/tools">Dart plugin</a>.
+            </p>
+            <p>Dart si můžete snadno vyzkoušet online:
+                <a href="https://dartpad.dartlang.org/">https://dartpad.dartlang.org/</a>.
+            </p>
+        </div>
+
+        <div class="card padding s12 m6">
+            <h3>Hlavní zdroje</h3>
+            <ul class="sources ul--flat">
+                <li><a href="https://www.dartlang.org/">https://www.dartlang.org/</a> - oficiální stránky</li>
+                <li><a href="https://www.dartlang.org/guides/get-started">get started</a> - jak začít</li>
+                <li><a href="https://www.dartlang.org/guides/language/language-tour">language tour</a> - přehled vlastností jazyka</li>
+                <li><a href="https://twitter.com/dart_lang">@dart_lang</a> - Twitter</li>
+                <li><a href="https://www.dartlang.org/community">community</a> - rozcestník na social media kanály a další komunity</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row--gutter margin--big--vertical">
+
+        <h3 class="s12 text--center">Jak pokračovat, pokud chcete vyvíjet pro:</h3>
+
+        <a href="https://webdev.dartlang.org/guides/get-started" class="btn bg--light-blue--l4 s12 m4">web</a>
+        <a href="https://flutter.io/getting-started/" class="btn bg--light-blue--l4 s12 m4">mobily</a>
+        <a href="https://www.dartlang.org/tutorials/dart-vm/get-started" class="btn bg--light-blue--l4 s12 m4">server</a>
+
+    </div>
+
+    <div class="margin--big--bottom">
+        <p class="italics">Tyto stránky jsou dílem fanoušků Dart-u a nejsou nijak ve spojení se společností Google. Obsah stránek byl částečně převzat z oficiálních
+            stránek <a href="http://www.dartlang.org/">dartlang.org</a> pod licencí Creative Commons Attribution 3.0.</p>
+    </div>
+
+    <div class="margin--big--bottom" id="motto">
+    </div>
+
+    <footer>
+        <p class="italics text--right">Provozuje <a href="https://fnx.io/">fnx.io s.r.o.</a></p>
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
