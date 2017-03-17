@@ -10,16 +10,40 @@ Future<Null> main() async {
 
   List<CaseStudy> studies = [];
 
-  studies.shuffle();
-
   studies.add(new CaseStudy()
       ..author="Multimedia atelier s.r.o."
       ..name="Spotřebitelská soutěž Flakes"
       ..image="01.jpg"
       ..link="http://www.m-atelier.cz/"
-      ..description="Webové 'flashovky' pro iPady. Běžely v rámci spotřebitelské soutěže, která nebyla určená pro český trh."
-          "Hry byly vytvořeny pomocí knihovny StageXL."
+      ..description='Webové "flashovky" pro iPady. Běžely v rámci spotřebitelské soutěže, která nebyla určená pro český trh. '
+          'Hry byly vytvořeny pomocí knihovny StageXL.'
   );
+
+  studies.add(new CaseStudy()
+    ..author="Jana Moudrá"
+    ..name="Oficiální knihovna pro Firebase"
+    ..image="02.jpg"
+    ..link="https://pub.dartlang.org/packages/firebase"
+    ..description="Knihovna původně vznikla jako Open Source projekt, který později Google převzal a stal se oficiální implementací."
+  );
+
+  studies.add(new CaseStudy()
+    ..author="fnx.io s.r.o."
+    ..name="fnx|ui"
+    ..image="03.jpg"
+    ..link="https://github.com/fnx-io/fnx_ui"
+    ..description="Knihovna Angular Dart komponent, která je určená pro rychlý vývoj informačních systémů, administračních rozhraní a CMS."
+  );
+
+  studies.add(new CaseStudy()
+    ..author="Filip Hráček"
+    ..name="Tisíc knih"
+    ..image="04.jpg"
+    ..link="http://tisicknih.cz/"
+    ..description="Nástroj, který vám na základě dat z Městské knihovny v Praze doporučí knihy, které by se Vám mohly líbit."
+  );
+
+  studies.shuffle();
 
   // firebase
   // fnx_ui

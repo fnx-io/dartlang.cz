@@ -13,10 +13,18 @@
     <style>
         img {
             width: 100%;
+            border-bottom: 1px solid lightgray;
         }
         .modal scroll {
             max-height: 50vh;
             overflow: scroll;
+        }
+        .card {
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
     </style>
     <script>
@@ -34,12 +42,12 @@
 </head>
 <body class="bg--light-blue--l4">
 
-<header class="bg--white padding--big margin--big--bottom shadow">
+<header class="bg--white padding--big shadow">
     <p><a href="https://dartlang.cz/">dartlang.cz</a></p>
     <h1>Galerie českých a slovenských Dart projektů</h1>
 </header>
 
-<main class=" padding--big">
+<main class="padding--big">
     <div class="row--gutter" id="showCases">
 
     </div>
