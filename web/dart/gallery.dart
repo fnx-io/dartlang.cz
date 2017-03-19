@@ -14,7 +14,7 @@ Future<Null> main() async {
       ..author="Multimedia atelier s.r.o."
       ..name="Spotřebitelská soutěž Flakes"
       ..image="01.jpg"
-      ..link="http://www.m-atelier.cz/"
+      ..link="http://www.stagexl.org/"
       ..description='Webové "flashovky" pro iPady. Běžely v rámci spotřebitelské soutěže, která nebyla určená pro český trh. '
           'Hry byly vytvořeny pomocí knihovny StageXL.'
   );
@@ -52,17 +52,24 @@ Future<Null> main() async {
 
   HtmlElement gallery = querySelector('#showCases');
 
+  void closeLastDialog([_]) {
+    var dialog = querySelector("#caseStudyModal");
+    if (dialog != null) dialog.remove();
+  }
+
+  document.onKeyUp.where((KeyboardEvent e) => e.keyCode == KeyCode.ESC).listen(closeLastDialog);
+
   for (var o in studies) {
     var card = new Element.html(renderListing(o));
     gallery.children.add(card);
     card.onClick.listen((_) async {
-      var dialog = querySelector("#caseStudyModal");
-      if (dialog != null) dialog.remove();
-      dialog = new Element.html(renderDialog(o));
+      closeLastDialog();
+      var dialog = new Element.html(renderDialog(o));
       document.body.append(dialog);
       await dialog.querySelector(".modal__close").onClick.first;
       dialog.remove();
     });
   }
+
 
 }
