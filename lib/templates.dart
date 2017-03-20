@@ -27,7 +27,7 @@ String renderDialog(CaseStudy caseStudy) {
               <div class="padding">
                 <h5>${caseStudy.author}</h5>
                 <p>${caseStudy.description}</p>
-                <p><a href="${caseStudy.link}">${caseStudy.link}</a></p>
+                <p><a href="${caseStudy.link}" target='_blank'>${caseStudy.link}</a></p>
               </div>
           </div>
         </div>

@@ -40,8 +40,25 @@ Future<Null> main() async {
     ..name="Tisíc knih"
     ..image="04.jpg"
     ..link="http://tisicknih.cz/"
-    ..description="Nástroj, který vám na základě dat z Městské knihovny v Praze doporučí knihy, které by se Vám mohly líbit."
+    ..description="Nástroj, který vám na základě dat Městské knihovny v Praze doporučí knihy, které by se Vám mohly líbit."
   );
+
+  studies.add(new CaseStudy()
+    ..author="SnowlyCode s.r.o."
+    ..name="FxSimulátor"
+    ..image="06.jpg"
+    ..link="http://fxsimulator.com/"
+    ..description="FxSimulátor simuluje chování forexových trhů ve zrychleném čase. Zajišťuje bleskový a nenáročný vstup do problematiky."
+  );
+
+  studies.add(new CaseStudy()
+    ..author="Websitemaster a.s."
+    ..name="Dragito"
+    ..image="05.jpg"
+    ..link="https://www.dragito.com/"
+    ..description="Dragito je experimentální služba pro tvorbu webových stránek."
+  );
+
 
   studies.shuffle();
 
@@ -64,12 +81,26 @@ Future<Null> main() async {
     gallery.children.add(card);
     card.onClick.listen((_) async {
       closeLastDialog();
-      var dialog = new Element.html(renderDialog(o));
+      var dialog = new Element.html(renderDialog(o), validator: new BenevolentNodeValidator());
       document.body.append(dialog);
       await dialog.querySelector(".modal__close").onClick.first;
       dialog.remove();
     });
   }
 
+
+}
+
+class BenevolentNodeValidator implements NodeValidator {
+
+  @override
+  bool allowsAttribute(Element element, String attributeName, String value) {
+    return !attributeName.startsWith("on");
+  }
+
+  @override
+  bool allowsElement(Element element) {
+    return element.tagName.toLowerCase()!="script";
+  }
 
 }
