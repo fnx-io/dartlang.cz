@@ -27,12 +27,6 @@
                 padding: 1em;
             }
         }
-        .logo {
-            width: 10rem;
-        }
-        .logo__wrapper {
-            margin-bottom: 3rem;
-        }
         p {
             line-height: 1.5;
         }
@@ -53,6 +47,18 @@
         footer {
             margin-top: 3rem;
         }
+        .site_menu {
+            margin-bottom: 3rem;
+            height: 4rem;
+        }
+        .site_menu > * {
+            line-height: 4rem;
+            padding:0;
+            margin:0;
+        }
+        .logo {
+            height: 4rem;
+        }
     </style>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -68,7 +74,11 @@
 <body class="bg--light-blue--l4">
 
 <div class="content bg--white">
-    <h1 class="logo__wrapper"><img src="img/logo.svg" class="logo" alt="Dart"></h1>
+    <header class="site_menu flex--row">
+        <h1 class="logo__wrapper"><img src="img/logo.svg" class="logo" alt="Dart"></h1>
+        <span class="spacer"></span>
+        <a href="galerie.html">Galerie</a>
+    </header>
 
     <div class="row--gutter margin--big--bottom">
         <div class="s12 m12 l8 hide-on-s">
@@ -148,7 +158,7 @@
     <div class="margin--big--bottom">
         <p class="italics">Tyto stránky jsou dílem fanoušků Dart-u a nejsou nijak ve spojení se společností Google. Obsah stránek byl částečně převzat z oficiálních
             stránek <a href="http://www.dartlang.org/">dartlang.org</a> pod licencí Creative Commons Attribution 3.0.</p>
-        <p class="italics"><strong>Používáte Dart?</strong> Dejte nám prosím vědět, rádi bychom na těchto stránkách ukázali,
+        <p class="italics"><strong>Používáte Dart?</strong> Dejte nám prosím vědět, rádi bychom na těchto stránkách <a href="galerie.html">ukázali</a>,
             kdo všechno v Česku a na Slovensku v Dartu dělá. <a href="mailto:dart@fnx.io">dart@fnx.io</a></p>
     </div>
 
