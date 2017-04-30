@@ -59,6 +59,13 @@ Future<Null> main() async {
     ..description="Dragito je experimentální služba pro tvorbu webových stránek."
   );
 
+  studies.add(new CaseStudy()
+    ..author="Státní fond životního prostředí"
+    ..name="Dotace Dešťovka"
+    ..image="07.jpg"
+    ..link="https://www.dotacedestovka.cz/"
+    ..description="Formuláře pro příjem žádostí v programu Dešťovka."
+  );
 
   studies.shuffle();
 
