@@ -13,6 +13,21 @@ String renderListing(CaseStudy caseStudy) {
 }
 
 
+String renderTip(Tip tip) {
+  return """
+      <a class="l3 m4 s12 bg--white pointer card shadow--raising"
+       href="https://dartpad.dartlang.org/${tip.dartPadId}"
+       target="_blank">
+        <div class="padding">
+          <h4>${tip.name} <span class='mi'>arrow_forward</span></h4>
+          <p>${tip.description}</p>
+          <p class="italics">${tip.author}</p>
+        </div>
+      </a>
+  """;
+}
+
+
 String renderDialog(CaseStudy caseStudy) {
   return """
   <div id="caseStudyModal" class="modal__wrapper">

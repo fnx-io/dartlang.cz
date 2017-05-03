@@ -7,3 +7,11 @@ class CaseStudy {
   String description;
   
 }
+class Tip {
+
+  String name;
+  String description;
+  String dartPadId;
+  String author;
+  
+}
