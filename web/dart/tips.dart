@@ -18,6 +18,14 @@ Future<Null> main() async {
       ..dartPadId="b887b707288c7be532237c466f63f273"
       ..author = TOMUCHA
   );
+
+  tips.add(new Tip()
+    ..name="async / await"
+    ..description="Pohodlné asynchronní programování pomocí 'await'"
+    ..dartPadId="3a611f5febde98d5de6c9fe56eb3431b"
+    ..author = TOMUCHA
+  );
+
   
   var benevolentValidator = new BenevolentNodeValidator();
   HtmlElement gallery = querySelector('#tips');
