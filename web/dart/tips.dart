@@ -39,6 +39,14 @@ Future<Null> main() async {
     ..dartPadId="454a0e659a3aea422f78416ddd4ffef1"
     ..author = TOMUCHA
   );
+
+  tips.add(new Tip()
+    ..name="Synchronní generátor"
+    ..description="Iterování přes komplikované struktury."
+    ..dartPadId="fe6e4f3f9e14fcbd111fdcd9e3295a93"
+    ..author = TOMUCHA
+  );
+
   
   var benevolentValidator = new BenevolentNodeValidator();
   HtmlElement gallery = querySelector('#tips');
