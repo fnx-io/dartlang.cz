@@ -12,6 +12,14 @@ Future<Null> main() async {
 
   const TOMUCHA = "Tomáš Zvěřina";
 
+
+  tips.add(new Tip()
+  ..name="Konstruktory"
+  ..description="Různé varianty konstruktorů objektů."
+  ..dartPadId="a082ec8f0c1a4e7c409195d228234069"
+  ..author = TOMUCHA
+  );
+
   tips.add(new Tip()
     ..name="List (pole)"
     ..description="List a pole - v Dartu jednou jsou."
