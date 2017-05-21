@@ -53,6 +53,13 @@ Future<Null> main() async {
     ..author = TOMUCHA
   );
 
+  tips.add(new Tip()
+    ..name = 'DOM eventy a atributy'
+    ..description = 'Přiřazování eventů a změna atributů v DOM.'
+    ..dartPadId = 'a1d0bc7572132d99ece391a9c50e5881'
+    ..author = 'Honza Bittner'
+  );
+  
   var benevolentValidator = new BenevolentNodeValidator();
   HtmlElement gallery = querySelector('#tips');
 
