@@ -1,0 +1,84 @@
+body {
+    height: auto;
+    min-height: 100%;
+}
+
+.gallery img,
+.spacer img {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.modal scroll {
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.card {
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    max-width: 80em;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+@media only screen and (max-width: 70em) {
+    .content {
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .content {
+        padding: 1em;
+    }
+}
+
+.sources li {
+    line-height: 1.8;
+}
+
+.sources li a {
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.site_menu {
+    margin-bottom: 3rem;
+    height: 4rem;
+}
+
+.site_menu > * {
+    line-height: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.scopes p {
+    background-color: #f5f5ff;
+    padding: 5px;
+}
