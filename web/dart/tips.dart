@@ -52,7 +52,7 @@ Future<Null> main() async {
     ..dartPadId = 'fe6e4f3f9e14fcbd111fdcd9e3295a93'
     ..author = TOMUCHA
   );
-  
+
   tips.add(new Tip()
     ..name = 'DOM eventy a atributy'
     ..description = 'Přiřazování eventů a změna atributů v DOM.'
