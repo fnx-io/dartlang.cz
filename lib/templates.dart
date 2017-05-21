@@ -1,7 +1,7 @@
 import 'package:dartlang/model.dart';
 
 String renderListing(CaseStudy caseStudy) {
-  return """
+  return '''
       <div class="l3 m6 s12 bg--white pointer card shadow--raising">
         <img src="img/gallery/${caseStudy.image}">
         <div class="padding">
@@ -9,12 +9,11 @@ String renderListing(CaseStudy caseStudy) {
           <p>${caseStudy.author}</p>
         </div>
       </div>
-  """;
+  ''';
 }
 
-
 String renderTip(Tip tip) {
-  return """
+  return '''
       <a class="l3 m4 s12 bg--white pointer card shadow--raising"
        href="https://dartpad.dartlang.org/${tip.dartPadId}"
        target="_blank">
@@ -24,12 +23,11 @@ String renderTip(Tip tip) {
           <p class="italics">${tip.author}</p>
         </div>
       </a>
-  """;
+  ''';
 }
 
-
 String renderDialog(CaseStudy caseStudy) {
-  return """
+  return '''
   <div id="caseStudyModal" class="modal__wrapper">
     <div class="modal">
       <a class="modal__close bg--light-blue--l4 text--white">close</a>
@@ -42,11 +40,11 @@ String renderDialog(CaseStudy caseStudy) {
               <div class="padding">
                 <h5>${caseStudy.author}</h5>
                 <p>${caseStudy.description}</p>
-                <p><a href="${caseStudy.link}" target='_blank'>${caseStudy.link}</a></p>
+                <p><a href="${caseStudy.link}" target="_blank">${caseStudy.link}</a></p>
               </div>
           </div>
         </div>
     </div>
   </div>
-  """;
+  ''';
 }
