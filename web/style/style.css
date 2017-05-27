@@ -35,18 +35,20 @@ footer {
     max-width: 80em;
     min-height: 100%;
     margin: 0 auto;
-    padding: 5em;
+    padding: 1em;
 }
 
-@media only screen and (max-width: 70em) {
+
+@media only screen and (min-width: 40em) {
     .content {
         padding: 2em;
     }
 }
 
-@media only screen and (max-width: 40em) {
+
+@media only screen and (min-width: 70em) {
     .content {
-        padding: 1em;
+        padding: 5em;
     }
 }
 
@@ -74,26 +76,32 @@ footer {
 
 .nav {
     display: flex;
-    flex-direction: column;
-    /*height: 4rem;*/
-    line-height: 4rem;
+    flex-direction: row;
     padding: 0;
-    /*margin-bottom: 2.3rem;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__logo {
+    display: inline-flex;
 }
 
 .nav__items {
-    display: flex;
-    flex: 1 0 auto;
+    display: inline-flex;
+    flex: 0 0 auto;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-@media (min-width: 450px) {
-    .nav {
-        flex-direction: row;
-        margin-bottom: 2.3rem;
-    }
+.nav__item {
+    margin: 0 10px;
+    line-height: 4rem;
+}
 
-    .nav__items {
-        justify-content: flex-end;
+@media only screen and (min-width: 40em) {
+    .nav {
+        margin-bottom: 2.3rem;
     }
 }
