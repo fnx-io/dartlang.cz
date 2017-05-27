@@ -63,17 +63,6 @@ footer {
     text-align: center;
 }
 
-.site_menu {
-    margin-bottom: 3rem;
-    height: 4rem;
-}
-
-.site_menu > * {
-    line-height: 4rem;
-    padding: 0;
-    margin: 0;
-}
-
 .logo {
     height: 4rem;
 }
@@ -81,4 +70,30 @@ footer {
 .scopes p {
     background-color: #f5f5ff;
     padding: 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    /*height: 4rem;*/
+    line-height: 4rem;
+    padding: 0;
+    /*margin-bottom: 2.3rem;*/
+}
+
+.nav__items {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+}
+
+@media (min-width: 450px) {
+    .nav {
+        flex-direction: row;
+        margin-bottom: 2.3rem;
+    }
+
+    .nav__items {
+        justify-content: flex-end;
+    }
 }
