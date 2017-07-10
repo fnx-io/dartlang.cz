@@ -66,6 +66,15 @@ Future<Null> main() async {
     ..description = 'Formuláře pro příjem žádostí v programu Dešťovka.'
   );
 
+  studies.add(new CaseStudy()
+    ..author = 'Jakub Zvěřina'
+    ..name = 'Pivastika'
+    ..image = 'pivastika.jpg'
+    ..link = 'https://app.pivastika.cz'
+    ..description = 'Pivastika Vám ukáže restaurace v okolí s jejich nabídkou piv a při návštěvě restaurace, počítáním Vaší útraty, '
+        'předejde nepříjemným překvapením při placení účtu.'
+  );
+
   studies.shuffle();
 
   // firebase
