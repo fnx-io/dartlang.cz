@@ -29,7 +29,7 @@ String renderTip(Tip tip) {
 String renderDialog(CaseStudy caseStudy) {
   return '''
   <div id="caseStudyModal" class="modal__wrapper">
-    <div class="modal">
+    <div class="modal" style="width: 50em; max-width: 96%">
       <a class="modal__close bg--light-blue--l4 text--white">close</a>
       <div class="flex--column">
           <header class="modal__header padding bg--light-blue--l4 text--white">
@@ -41,7 +41,7 @@ String renderDialog(CaseStudy caseStudy) {
                 <h5>${caseStudy.author}</h5>
                 <p>${caseStudy.description}</p>
                 <p><a href="${caseStudy.link}" target="_blank">${caseStudy.link}</a></p>
-              </div>
+              </div>          
           </div>
         </div>
     </div>

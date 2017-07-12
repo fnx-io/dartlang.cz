@@ -75,6 +75,14 @@ Future<Null> main() async {
         'předejde nepříjemným překvapením při placení účtu.'
   );
 
+  studies.add(new CaseStudy()
+    ..author = 'Technologická agentura ČR'
+    ..name = 'Průvodce podáním nabídky'
+    ..image = 'pruvodce.jpg'
+    ..link = 'https://pruvodce.beta.tacr.cz/'
+    ..description = 'Průvodce je nástroj pro elektronické podání nabídky do veřejných zakázek vyhlašovaných TACŘ.'
+  );
+  
   studies.shuffle();
 
   // firebase
