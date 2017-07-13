@@ -80,7 +80,7 @@ Future<Null> main() async {
     ..name = 'Průvodce podáním nabídky'
     ..image = 'pruvodce.jpg'
     ..link = 'https://pruvodce.beta.tacr.cz/'
-    ..description = 'Průvodce je nástroj pro elektronické podání nabídky do veřejných zakázek vyhlašovaných TACŘ.'
+    ..description = 'Průvodce je nástroj pro elektronické podání nabídky do veřejných zakázek vyhlašovaných TAČR.'
   );
   
   studies.shuffle();
