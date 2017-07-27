@@ -90,6 +90,14 @@ Future<Null> main() async {
     ..link = 'http://www.galeos.eu'
     ..description = 'Interní systém pro správu licencí poskytovaných společností Galeos a.s.'
   );
+
+  studies.add(new CaseStudy()
+    ..author = 'Multimedia atelier s.r.o.'
+    ..name = 'we.are.hiring.cz'
+    ..image = 'hiring.jpg'
+    ..link = 'http://we.are.hiring.cz/'
+    ..description = 'Náborová kampaň digitální agentury Multimedia atelier s.r.o.'
+  );
   
   studies.shuffle();
 
