@@ -82,6 +82,14 @@ Future<Null> main() async {
     ..link = 'https://pruvodce.beta.tacr.cz/'
     ..description = 'Průvodce je nástroj pro elektronické podání nabídky do veřejných zakázek vyhlašovaných TAČR.'
   );
+
+  studies.add(new CaseStudy()
+    ..author = 'Galeos a.s.'
+    ..name = 'Galeos LMS'
+    ..image = 'galeos.jpg'
+    ..link = 'http://www.galeos.eu'
+    ..description = 'Interní systém pro správu licencí poskytovaných společností Galeos a.s.'
+  );
   
   studies.shuffle();
 
