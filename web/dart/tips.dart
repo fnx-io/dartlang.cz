@@ -9,7 +9,8 @@ Future<Null> main() async {
 
   List<Tip> tips = [];
 
-  const TOMUCHA = 'Tomáš Zvěřina';
+  const String TOMUCHA = 'Tomáš Zvěřina';
+  const String hobi = 'Honza Bittner';
 
   tips.add(new Tip()
     ..name = 'Konstruktory'
@@ -20,7 +21,7 @@ Future<Null> main() async {
 
   tips.add(new Tip()
     ..name = 'List (pole)'
-    ..description = 'List a pole - v Dartu jednou jsou.'
+    ..description = 'List a pole &ndash; v Dartu jednou jsou.'
     ..dartPadId = 'e1f4e71b7d75d29cc7ea9e6870b502c4'
     ..author = TOMUCHA
   );
@@ -57,9 +58,23 @@ Future<Null> main() async {
     ..name = 'DOM eventy a atributy'
     ..description = 'Přiřazování eventů a změna atributů v DOM.'
     ..dartPadId = 'a1d0bc7572132d99ece391a9c50e5881'
-    ..author = 'Honza Bittner'
+    ..author = hobi
   );
-  
+
+  tips.add(new Tip()
+    ..name = 'Null-aware operátory'
+    ..description = 'Operátory pro ošetření null hodnot.'
+    ..dartPadId = '4a62d9770437e596e9d650e84ade233b'
+    ..author = hobi
+  );
+
+  tips.add(new Tip()
+    ..name = 'Factory pattern'
+    ..description = 'Klíčové slov factory a jeho možnosti.'
+    ..dartPadId = '115f7a5909773ef6acaa5b7eef36b00a'
+    ..author = hobi
+  );
+
   var benevolentValidator = new BenevolentNodeValidator();
   HtmlElement gallery = querySelector('#tips');
 
