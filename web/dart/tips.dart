@@ -64,14 +64,35 @@ Future<Null> main() async {
   tips.add(new Tip()
     ..name = 'Null-aware operátory'
     ..description = 'Operátory pro ošetření null hodnot.'
-    ..dartPadId = '4a62d9770437e596e9d650e84ade233b'
+    ..dartPadId = 'be4b77088a4f3398a2acac22a202c98d'
     ..author = hobi
   );
 
   tips.add(new Tip()
     ..name = 'Factory pattern'
-    ..description = 'Klíčové slov factory a jeho možnosti.'
-    ..dartPadId = '115f7a5909773ef6acaa5b7eef36b00a'
+    ..description = 'Klíčové slovo factory a jeho možnosti.'
+    ..dartPadId = '13de616df0b5212fa63812c6d4a391cf'
+    ..author = hobi
+  );
+
+  tips.add(new Tip()
+    ..name = 'Gettery a settery'
+    ..description = 'Gettery a settery sdílejí API s vlastnostmi.'
+    ..dartPadId = '994b884d8f9d5798d2e192c78464683a'
+    ..author = hobi
+  );
+
+  tips.add(new Tip()
+    ..name = 'Cykly'
+    ..description = 'Procházení struktur.'
+    ..dartPadId = '7d1ecafeec6f44606dc4cb656988f7c2'
+    ..author = hobi
+  );
+
+  tips.add(new Tip()
+    ..name = 'Typedef'
+    ..description = 'Typové aliasy a Function-type.'
+    ..dartPadId = 'd7ee9641be446ec949e2020ba1b60541'
     ..author = hobi
   );
 
