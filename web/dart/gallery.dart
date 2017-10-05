@@ -98,6 +98,14 @@ Future<Null> main() async {
     ..link = 'http://we.are.hiring.cz/'
     ..description = 'Náborová kampaň digitální agentury Multimedia atelier s.r.o.'
   );
+
+  studies.add(new CaseStudy()
+    ..author = 'MullenLowe Praha'
+    ..name = 'Vodafone Lovec světla'
+    ..image = 'vodafone.jpg'
+    ..link = 'http://www.mullenlowe.cz/'
+    ..description = 'Flutter aplikace pro registraci soutěžících do hry Lovec světla.'
+  );
   
   studies.shuffle();
 
